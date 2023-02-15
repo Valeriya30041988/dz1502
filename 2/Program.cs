@@ -12,12 +12,13 @@ int a = Convert.ToInt32(Console.ReadLine());
 
 if(a > 99)
 {
-    while(a <= 999)
+    while(a >= 999)
     {
         a = a / 10;
+        Console.WriteLine(a);
     }
     int n = a % 10; 
-    Console.WriteLine("Третья цифра числа " + n);
+    Console.WriteLine($"Третья цифра числа = {n}");
 }
 else 
 {
